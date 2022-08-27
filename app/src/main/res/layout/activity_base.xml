@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFiles.BaseActivity"
+    android:layout_gravity="bottom"
+    android:paddingBottom="5dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="10dp"
+        android:id="@+id/bottomNavBar"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="bottom">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/radioGroup1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Home"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="2dp"
+                android:checked="false"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:id="@+id/bottom_home"
+                android:drawableTop="@drawable/menu_icon_home"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Add Product"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="2dp"
+                android:checked="false"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:id="@+id/bottom_addprod"
+                android:drawableTop="@drawable/menu_icon_addproduct"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Search"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="2dp"
+                android:checked="false"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:id="@+id/bottom_search"
+                android:drawableTop="@drawable/menu_icon_search"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="My cart"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="2dp"
+                android:checked="false"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:id="@+id/bottom_cart"
+                android:drawableTop="@drawable/menu_icon_mycart"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Profile"
+                android:layout_weight="1"
+                android:button="@null"
+                android:padding="2dp"
+                android:checked="false"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:id="@+id/bottom_profile"
+                android:drawableTop="@drawable/menu_4icon_profile"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dynamicContent"
+        android:orientation="vertical"
+        android:layout_marginBottom="56dp"
+        android:layout_gravity="bottom">
+
+    </LinearLayout>
+
+
+</FrameLayout>
